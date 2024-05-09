@@ -46,6 +46,8 @@ body {
     font-family: var(--primary-font);
     font-size: 1.2em;
     background-color: rgb(212, 212, 212);
+    padding: 0 auto;
+    margin: 0 auto;
 }
 
 h2 {
@@ -60,7 +62,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
 }
 
 img {
