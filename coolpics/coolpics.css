@@ -31,6 +31,8 @@ h1 {
 nav {
     display: flex;
     justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
     padding: 15px;
 }
 
@@ -53,6 +55,11 @@ body {
 h2 {
     padding: 10px;
     text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .gallery {
@@ -79,6 +86,11 @@ footer {
     background-color: var(--primary-color); 
     padding: 15px; 
     color: white;
+}
+
+footer p {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
