@@ -1,14 +1,14 @@
-function handleResize() {
-    const menu = document.querySelector("Menu");
-    if (window.innerWidth > 1000) {
-        menu.classList.remove("hide");
-    } else {
-        menu.classList.add("hide");
-    }
-};
+// function handleResize() {
+//     const menu = document.querySelector("Menu");
+//     if (window.innerWidth > 1000) {
+//         menu.classList.remove("hide");
+//     } else {
+//         menu.classList.add("hide");
+//     }
+// };
 
-handleResize();
-window.addEventListener("resize", handleResize);
+// handleResize();
+// window.addEventListener("resize", handleResize);
 
 function viewerTemplate (pic, alt) {
     return    `<div class="viewer"> 
@@ -18,9 +18,11 @@ function viewerTemplate (pic, alt) {
 
 function viewHandler(event) {
     var targetPic = event.target;
+    console.log(targetPic)
 
     var picSrc = targetPic.src;
     var picAlt = targetPic.alt;
+    console.log(picSrc)
 
     var srcSplit = picSrc.split('-');
 
@@ -33,7 +35,7 @@ function viewHandler(event) {
 
     var closeButton = document.querySelector(".close-viewer");
 
-    closeButton.addEventListener("click", closeViewer());
+    closeButton.addEventListener("click", closeViewer);
 
 };
 
@@ -42,3 +44,11 @@ function closeViewer() {
     viewer.remove();
 
 };
+
+// Get all the <img> elements
+var pictures = document.querySelectorAll("img");
+
+// Attach the viewHandler function to each <img> element
+pictures.forEach(function(picture) {
+    picture.addEventListener("click", viewHandler);
+});
