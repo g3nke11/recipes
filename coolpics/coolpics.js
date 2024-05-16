@@ -1,14 +1,14 @@
-// function handleResize() {
-//     const menu = document.querySelector("Menu");
-//     if (window.innerWidth > 1000) {
-//         menu.classList.remove("hide");
-//     } else {
-//         menu.classList.add("hide");
-//     }
-// };
+function handleResize() {
+    const menu = document.querySelector("#menu");
+    if (window.innerWidth > 1000) {
+        menu.classList.remove("hide");
+    } else {
+        menu.classList.add("hide");
+    }
+};
 
-// handleResize();
-// window.addEventListener("resize", handleResize);
+handleResize();
+window.addEventListener("resize", handleResize);
 
 function viewerTemplate (pic, alt) {
     return    `<div class="viewer"> 
