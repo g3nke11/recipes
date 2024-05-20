@@ -30,7 +30,6 @@ h1 {
 
 .hide {
     display: none;
-    font-weight: bold;
 }
 
 nav {
@@ -131,9 +130,6 @@ footer p {
 }
 
 @media screen and (max-width: 900px) {
-    .hide {
-        display: block;
-    }
 
     nav, footer {
         flex-direction: column;

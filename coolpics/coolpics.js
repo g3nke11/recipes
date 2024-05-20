@@ -1,14 +1,28 @@
 function handleResize() {
     const menu = document.querySelector("#menu");
-    if (window.innerWidth > 1000) {
+    const menuButton = document.querySelector("#menu-button");
+    if (window.innerWidth > 900) {
         menu.classList.remove("hide");
+        menuButton.classList.add("hide");
+        console.log('first');
     } else {
         menu.classList.add("hide");
+        menuButton.classList.remove("hide");
+        console.log('second');
     }
 };
 
-handleResize();
+// handleResize();
 window.addEventListener("resize", handleResize);
+
+const menuButton = document.querySelector("#menu-button");
+function toggleMenu() {
+    const menu = document.querySelector("#menu");
+    menu.classList.toggle('hide');
+    console.log('toggle');
+}
+
+menuButton.addEventListener("click", toggleMenu);
 
 function viewerTemplate (pic, alt) {
     return    `<div class="viewer"> 
