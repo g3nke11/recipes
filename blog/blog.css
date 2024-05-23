@@ -110,9 +110,7 @@ p {
 }
 
 footer {
-    background-color: var(--primary-color); 
     padding: 15px; 
-    color: white;
 }
 
 footer p {
