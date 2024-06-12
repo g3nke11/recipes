@@ -46,4 +46,4 @@ function submitForm(event) {
     formElement.insertAdjacentHTML("afterend", successHtml);
   };
 
-document.querySelector("form").addEventListener("click", submitForm());
+document.querySelector("form").addEventListener("click", submitForm);
