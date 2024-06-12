@@ -35,7 +35,7 @@ export function participantTemplate(count) {
                     <option value="12">12th</option>
                   </select>
                 </div>
-              </section>`};
+              </section>`;}
 
 export function successTemplate(info) {
     return `<div>
@@ -46,4 +46,4 @@ export function successTemplate(info) {
     <p>Total fees: ${info[0]}</p>
     </div>`;
 
-};
+}
