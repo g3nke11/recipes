@@ -39,8 +39,7 @@ export function participantTemplate(count) {
 
 export function successTemplate(info) {
     return `<div>
-    <h1>Camp Registration</h1>
-    <p>Successful Submission!</p>
+    <h2>Successful Submission!</h2>
     <p>Adult: ${info[1]}</p>
     <p>Number of Participants: ${info[2]}</p>
     <p>Total fees: ${info[0]}</p>

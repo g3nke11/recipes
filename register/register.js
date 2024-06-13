@@ -1,4 +1,4 @@
-import { participantTemplate, successTemplate } from "./Templates";
+import { participantTemplate, successTemplate } from "./Templates.js";
 
 const addButton = document.querySelector('#add');
 const participantsContainer = document.querySelector('#participants-container')
@@ -35,15 +35,22 @@ function totalFees() {
 };
 
 function submitForm(event) {
+    // Prevent page from reloading
     event.preventDefault();
+
+    // Gather needed info from form
     let total = totalFees();
     let adultName = document.querySelector('#adult_name').value;
     let totalParticipants = count;
     let info = [total, adultName, totalParticipants];
+
+    // Hide the form
     let formElement = document.querySelector('form');
     formElement.style.display = "none";
+
+    // Display success result
     let successHtml = successTemplate(info);
     formElement.insertAdjacentHTML("afterend", successHtml);
   };
 
-document.querySelector("form").addEventListener("click", submitForm);
+document.querySelector("form").addEventListener("submit", submitForm);
