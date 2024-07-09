@@ -1,0 +1,131 @@
+<!--White Water Rafting Site Homepage-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations | Best Books | Contact Us</title>
+    <link rel="stylesheet" href="styles/recommendation.css">
+    <style>
+        form {
+            margin: 25px auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        form li + li {
+            margin-top: 1em;
+        }
+
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+
+        input, textarea {
+            font: 1em sans-serif;
+            width: 300px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #000;
+        }
+
+        textarea {
+            vertical-align: top;
+            height: 5em;
+        }
+
+        .button {
+            padding-left: 90px;
+        }
+
+        button {
+            margin-left: 0.5em;
+        }
+
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 0.5em;
+            display: none;
+        }
+
+        .moveDown {
+            margin-top: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <header class="accent1">
+            <a id="logo_link" href="index.html">
+                <img src="images/Best_Books-logos/adjusted_logos/rsz_best_books-logos_white.png" alt="Logo image" class="logo">
+            </a>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./recommendations.html">Recommendations</a>
+                <a href="./contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <div id="feedback"></div>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                            <label for="mail">Email:</label>
+                            <input type="text" id="mail" name="user_email">
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea name="user_message" id="msg"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
+            
+        </main>
+
+        <!--Just finished part 6. Now onto part 7, the Footer-->
+        <footer class="fict_foot">
+            <p>Best Books &copy; 2024 - Glen Kelley</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="../wwr/images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="../wwr/images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="../wwr/images/instagram.png" alt="intagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
