@@ -272,6 +272,32 @@ ul {
     list-style-type: none;
 }
 
+/*New rules*/
+#search-container {
+    /* grid-column: 2/3; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#search-icon {
+    max-width: 50px;
+    margin-left: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#search-bar {
+    height: 50px;
+    max-width: 90%;
+    width: 80%;
+    border-radius: 10px;
+}
+
 /* Phone version */
 @media screen and (max-width: 900px) {
     .banner, .hero, .home-grid {
