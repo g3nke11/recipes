@@ -170,8 +170,15 @@ footer a:hover {
     color: white;
 }
 
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
 footer .social img {
     padding-top: 15px;
+    width: 100%;
 }
 
 /* Recommendation Rules */
