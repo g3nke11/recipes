@@ -1,4 +1,4 @@
-import { coverTemplate, recommendationTemplate } from "./templates.js";
+import { coverTemplate } from "./templates.js";
 import books from './books.mjs';
 
 function random(num) {
@@ -48,51 +48,3 @@ function indexCovers() {
 document.addEventListener('DOMContentLoaded', function() {
     indexCovers();
 });
-
-// Add recommendations
-function renderRecommendations(bookList) {
-    const contentContainer = document.querySelector('#content');
-    contentContainer.innerHTML = '';
-
-    bookList.forEach(book => {
-        const coverHTML = recommendationTemplate(book);
-        console.log("renderRecipes: ", book);
-        coverContainer.insertAdjacentHTML("beforeend", coverHTML);
-    })
-}
-
-function recommendationContent() {
-    let bookList = getRandomListEntry(books);
-    bookList.push(getRandomListEntry(books));
-    bookList.push(getRandomListEntry(books));
-    bookList.push(getRandomListEntry(books));
-    bookList.push(getRandomListEntry(books));
-    renderRecommendations(bookList);
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    recommendationContent();
-});
-
-
-function filter(query) {
-    const filtered = recipes.filter(recipe => {
-        return recipe.name.toLowerCase().includes(query) ||
-                recipe.description.toLowerCase().includes(query) ||
-                recipe.tags.some(tag => tag.toLowerCase().includes(query));
-    });
-    console.log(filtered);
-    const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
-    console.log(sorted);
-    return sorted;
-}
-
-function searchHandler(e) {
-    // e.preventDafult();
-    const searchTerm = e.target.value.toLowerCase();
-    const filterRecipes = filter(searchTerm);
-    renderRecipes(filterRecipes);
-    console.log("handler done");
-}
-
-document.querySelector('#search-bar').addEventListener('search', searchHandler);
