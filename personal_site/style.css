@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-    width: 80px;
+    width: 70%;
     height: auto;
 }
 
@@ -287,6 +287,9 @@ ul {
     }
     .home-title {
         font-size: 25px;
+    }
+    .recommendations_content {
+        display: flex;
     }
     
 }
