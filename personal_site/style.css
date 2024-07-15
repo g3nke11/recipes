@@ -17,15 +17,16 @@
 header {
     background-color: #35605A;
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 100px auto;
 }
 
 .logo {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
 #logo_link {
+    margin-left: 15px;
     padding-top: 5px;
     justify-self: center;
     align-self: center;
@@ -176,9 +177,12 @@ footer a:hover {
     gap: 5px;
 }
 
-footer .social img {
+.social img {
     padding-top: 15px;
-    width: 100%;
+    max-width: 100%;
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
 }
 
 /* Recommendation Rules */
@@ -193,7 +197,9 @@ footer .social img {
 }
 
 .recommendations_content img {
-    width: 100%;
+    max-width: 100%;
+    width: 350px;
+    height: auto;
     border: 5px solid #00120B;
     border-radius: 5px;
     margin: auto;
@@ -223,11 +229,6 @@ footer .social img {
     grid-column: 4/6;
     /* grid-row: 3/5; */
 }
-
-/* #content3 {
-    grid-column: 1/3;
-    grid-row: 5/7;
-} */
 
 .fict_foot {
     margin: 0
